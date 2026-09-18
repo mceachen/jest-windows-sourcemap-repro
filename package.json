@@ -1,0 +1,9 @@
+{
+  "name": "jest-windows-sourcemap-repro",
+  "private": true,
+  "scripts": { "test": "jest --runInBand --no-cache" },
+  "devDependencies": { "jest": "30.5.1" },
+  "jest": {
+    "transform": { "\\.js$": "<rootDir>/source-map-transformer.js" }
+  }
+}
